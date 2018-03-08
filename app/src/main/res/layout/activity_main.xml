@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devnitish.circularbuttongrouprelative.MainActivity">
+
+    <!-- central view...-->
+    <!-- elevation is very important
+        if it is not provided than 
+        translated view will consume our 
+        touch and we will be unable to open
+        the menu again......
+        -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="25dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/facebook"
+        android:elevation="20dp"
+        android:src="@drawable/ic_facebook"
+        />
+<!-- Now all view from base line in clockwise direction...-->
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_whatsapp"
+        android:padding="25dp"
+        android:id="@+id/whatsapp"
+        android:layout_marginRight="25dp"
+        android:layout_alignBottom="@+id/facebook"
+        android:layout_toLeftOf="@+id/facebook"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_instagram"
+        android:padding="25dp"
+        android:id="@+id/instagram"
+        android:layout_above="@+id/facebook"
+        android:layout_toLeftOf="@+id/facebook"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/tinder"
+        android:layout_alignLeft="@+id/facebook"
+        android:layout_above="@+id/facebook"
+        android:src="@drawable/ic_tinder"
+        android:layout_marginBottom="25dp"
+        android:padding="25dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/facebook"
+        android:layout_above="@+id/facebook"
+        android:src="@drawable/ic_tumblr"
+        android:id="@+id/tumbler"
+        android:padding="25dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/facebook"
+        android:layout_toRightOf="@+id/facebook"
+        android:src="@drawable/ic_blogger"
+        android:id="@+id/blogger"
+        android:padding="25dp"
+        android:layout_marginLeft="25dp"
+        />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/facebook"
+        android:layout_toLeftOf="@+id/facebook"
+        android:src="@drawable/ic_gmail"
+        android:id="@+id/gmail"
+        android:padding="25dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/facebook"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/facebook"
+        android:src="@drawable/ic_slack"
+        android:id="@+id/slack"
+        android:padding="25dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/facebook"
+        android:layout_below="@+id/facebook"
+        android:src="@drawable/ic_googlehangouts"
+        android:id="@+id/hangout"
+        android:padding="25dp"
+        />
+
+
+
+
+</RelativeLayout>
